@@ -17,6 +17,12 @@ app.use(cors(corsOptions));
 //variables de entorno
 require('dotenv').config()
 
+console.log(process.env.DB_PORT);
+console.log(process.env.DB_HOST);
+console.log(process.env.DB_NAME);
+console.log(process.env.DB_USER);
+console.log(process.env.DB_PASSWORD);
+
 const db = require('./models/db');
 // sincronizando la base de datos
 db.sync()
@@ -32,7 +38,7 @@ app.use(express.static(path.join(__dirname, 'dist')));
 app.use((req, res, next) => {
     res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
-//configurando el puerto 
+//configurando el puerto  
 const PORT = process.env.PORT || 3500;
 app.listen(PORT, () => {
     console.log(`servidor andando en: ${PORT}`)
