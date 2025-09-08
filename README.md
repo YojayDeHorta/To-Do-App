@@ -1,22 +1,22 @@
-To-Do-App
+To-Do-App ✨
 Este es un proyecto de aplicación de lista de tareas, diseñada para ayudar a los usuarios a gestionar sus actividades diarias de manera eficiente. La aplicación está construida como una solución full-stack, con un backend robusto en Node.js y un frontend dinámico en Vue.js.
 
-Características
+Características 🚀
 Autenticación de Usuarios: Registro y login seguro para que cada usuario tenga su propia lista de tareas.
 
 Gestión de Tareas (CRUD):
 
-Crear nuevas tareas con título y descripción.
+✅ Crear nuevas tareas con título y descripción.
 
-Recuperar y visualizar tareas de forma paginada.
+🔍 Recuperar y visualizar tareas de forma paginada.
 
-Update (actualizar) el estado de una tarea (completada/pendiente) o sus detalles.
+✏️ Update (actualizar) el estado de una tarea (completada/pendiente) o sus detalles.
 
-Delete (eliminar) tareas.
+🗑️ Delete (eliminar) tareas.
 
 Paginación: Las tareas se muestran en páginas para mejorar la experiencia de usuario y el rendimiento al manejar grandes volúmenes de datos.
 
-Tecnologías Utilizadas
+Tecnologías Utilizadas 🛠️
 Backend
 Node.js: Entorno de ejecución de JavaScript del lado del servidor.
 
@@ -35,7 +35,7 @@ Axios: Cliente HTTP para realizar peticiones a la API del backend.
 
 Tailwind CSS: Framework de CSS utilitario para un diseño rápido y responsivo.
 
-Configuración del Proyecto
+Configuración del Proyecto ⚙️
 Sigue estos pasos para tener una copia del proyecto en tu máquina local para desarrollo.
 
 1. Requisitos Previos
@@ -89,5 +89,5 @@ npm run dev
 
 La aplicación se abrirá en tu navegador en http://localhost:5173/ (o un puerto similar).
 
-Despliegue
+Despliegue 🌐
 Este proyecto está configurado para ser desplegado en plataformas como Vercel para el frontend y Render o Railway para el backend. Recuerda configurar las variables de entorno de la base de datos en la plataforma de despliegue de tu backend para que la aplicación funcione correctamente en producción.
