@@ -35,7 +35,7 @@
           Guardar
         </button>
       </div>
-      <div class="space-y-4" v-if="tasks.length > 0">
+      <div class="space-y-4">
         <h2 class="text-2xl font-bold text-gray-800 border-b">
           Tareas
         </h2>
@@ -77,6 +77,9 @@
             </button>
           </li>
         </ul>
+        <div v-if="tasks.length === 0" class="border-t pt-4">
+          <p class="text-sm text-gray-600">No hay tareas disponibles</p>
+        </div>
         <!-- Paginacion -->
         <div class="mt-6 flex justify-center items-center gap-3">
           <button @click="previousPage" :disabled="currentPage === 1" class="px-2 py-1 rounded-lg font-bold hover:cursor-pointer" :class="{'bg-blue-500 text-white hover:bg-blue-600': currentPage > 1,'bg-gray-300 text-gray-500 cursor-not-allowed': currentPage === 1}">

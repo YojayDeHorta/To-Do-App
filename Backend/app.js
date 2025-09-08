@@ -1,7 +1,6 @@
 const express = require("express")
 const app = express()
 const path = require('path');
-
 //capturar el body
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
@@ -17,12 +16,6 @@ app.use(cors(corsOptions));
 //variables de entorno
 require('dotenv').config()
 
-console.log(process.env.DB_PORT);
-console.log(process.env.DB_HOST);
-console.log(process.env.DB_NAME);
-console.log(process.env.DB_USER);
-console.log(process.env.DB_PASSWORD);
-
 const db = require('./models/db');
 // sincronizando la base de datos
 db.sync()
@@ -34,10 +27,11 @@ app.use('/auth', require('./routes/auth'));
 app.use('/tasks', require('./routes/tasks'));
 
 // preparamos el front para produccion
-app.use(express.static(path.join(__dirname, 'dist')));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use((req, res, next) => {
-    res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
+
 //configurando el puerto  
 const PORT = process.env.PORT || 3500;
 app.listen(PORT, () => {

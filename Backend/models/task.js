@@ -31,6 +31,12 @@ const Task = db.define('Task', {
         type: DataTypes.DATE,
         defaultValue: DataTypes.NOW
     }
+}, {
+    indexes: [
+      {
+        fields: ['user_id']
+      }
+    ]
 });
 
 module.exports = { Task };
