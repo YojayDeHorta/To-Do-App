@@ -1,5 +1,5 @@
 # Directorios de dependencias
 node_modules/
-
+create-db.js
 
 .vercel
