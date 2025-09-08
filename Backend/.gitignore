@@ -1,7 +1,5 @@
 # Directorios de dependencias
 node_modules/
 
-# Archivos de variables de entorno
-.env
 
 .vercel
