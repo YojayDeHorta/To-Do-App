@@ -49,13 +49,13 @@ Frontend:
 🖥️ CONFIGURACIÓN DEL BACKEND
 ============================
 
-1️⃣ Navegar al directorio:
+1️⃣ Navegamos al directorio:
    cd backend
 
-2️⃣ Instalar dependencias:
+2️⃣ Instalamos las dependencias:
    npm install
 
-3️⃣ Crear archivo .env en la carpeta backend:
+3️⃣ Creamos el archivo .env en la carpeta backend:
 ```bash
    DB_NAME=tu_nombre_de_bd 
    DB_USER=tu_usuario 
@@ -66,7 +66,7 @@ Frontend:
    TOKEN_EXPIRATION=12h 
    PORT=3000
 ```
-4️⃣ Iniciar el servidor:
+4️⃣ Iniciamos el servidor:
    node app.js
 
 🎉 El servidor estará corriendo en localhost:3000
@@ -91,11 +91,3 @@ Frontend:
 
 🎉 La aplicación estará disponible en http://localhost:5173/
 
-🌐 DESPLIEGUE EN PRODUCCIÓN
-===========================
-
-Frontend: Vercel, Netlify
-Backend: Render, Railway, Heroku
-Base de Datos: PlanetScale, AWS RDS
-
-⚠️ IMPORTANTE: Configura todas las variables de entorno en tu plataforma de despliegue
