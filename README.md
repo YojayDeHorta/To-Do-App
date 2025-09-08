@@ -12,7 +12,7 @@ Solución full-stack con backend en Node.js y frontend en Vue.js.
 - Cada usuario tiene su propia lista de tareas
 
 📝 Gestión Completa de Tareas (CRUD)
-- ✅ Crear nuevas tareas con título y descripción
+- ✅ Crear nuevas tareas con título y descripción 
 - 👀 Visualizar todas tus tareas organizadas
 - ✏️ Actualizar estado (completada/pendiente) y detalles
 - 🗑️ Eliminar tareas que ya no necesites
@@ -26,17 +26,17 @@ Solución full-stack con backend en Node.js y frontend en Vue.js.
 
 Backend:
 --------
-🟢 Node.js - Entorno de ejecución JavaScript
-⚡ Express.js - Framework web para APIs REST  
-🔄 Sequelize - ORM para gestión de base de datos
-🗃️ MySQL - Base de datos relacional
-🔑 JWT - Autenticación y autorización
+🟢 Node.js - Entorno de ejecución JavaScript 
+⚡ Express.js - Framework web para APIs REST   
+🔄 Sequelize - ORM para gestión de base de datos 
+🗃️ MySQL - Base de datos relacional 
+🔑 JWT - Autenticación y autorización 
 
 Frontend:
 ---------
-💚 Vue.js - Framework para interfaces de usuario
-📡 Axios - Cliente HTTP para peticiones API
-🎨 Tailwind CSS - Framework CSS utilitario
+💚 Vue.js - Framework para interfaces de usuario 
+📡 Axios - Cliente HTTP para peticiones API 
+🎨 Tailwind CSS - Framework CSS utilitario 
 
 ⚙️ CONFIGURACIÓN DEL PROYECTO
 =============================
@@ -57,13 +57,13 @@ Frontend:
 
 3️⃣ Crear archivo .env en la carpeta backend:
 
-   DB_NAME=tu_nombre_de_bd
-   DB_USER=tu_usuario
-   DB_PASSWORD=tu_contraseña
-   DB_HOST=localhost
-   DB_PORT=3306
-   TOKEN_SECRET=token_secret
-   TOKEN_EXPIRATION=12h
+   DB_NAME=tu_nombre_de_bd 
+   DB_USER=tu_usuario 
+   DB_PASSWORD=tu_contraseña 
+   DB_HOST=localhost 
+   DB_PORT=3306 
+   TOKEN_SECRET=token_secret 
+   TOKEN_EXPIRATION=12h 
    PORT=3000
 
 4️⃣ Iniciar el servidor:
