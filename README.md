@@ -56,7 +56,7 @@ Frontend:
    npm install
 
 3️⃣ Crear archivo .env en la carpeta backend:
-
+```bash
    DB_NAME=tu_nombre_de_bd 
    DB_USER=tu_usuario 
    DB_PASSWORD=tu_contraseña 
@@ -65,7 +65,7 @@ Frontend:
    TOKEN_SECRET=token_secret 
    TOKEN_EXPIRATION=12h 
    PORT=3000
-
+```
 4️⃣ Iniciar el servidor:
    node app.js
 
