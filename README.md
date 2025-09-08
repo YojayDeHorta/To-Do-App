@@ -1,99 +1,101 @@
-# 📋 Sistema de Gestión de Tareas
-Este es un proyecto de aplicación de lista de tareas, diseñada para ayudar a los usuarios a gestionar sus actividades diarias de manera eficiente. La aplicación está construida como una solución full-stack, con un backend robusto en Node.js y un frontend dinámico en Vue.js.
+📋 SISTEMA DE GESTIÓN DE TAREAS
+==========================================
 
-## ✨Características 🚀
-Autenticación de Usuarios: Registro y login seguro para que cada usuario tenga su propia lista de tareas.
+🎯 Una aplicación web moderna para organizar tus tareas diarias de manera eficiente.
+Solución full-stack con backend en Node.js y frontend en Vue.js.
 
-Gestión de Tareas (CRUD):
+✨ CARACTERÍSTICAS PRINCIPALES
+============================
 
-✅ Crear nuevas tareas con título y descripción.
+🔐 Autenticación de Usuarios
+- Registro y login seguro
+- Cada usuario tiene su propia lista de tareas
 
-🔍 Recuperar y visualizar tareas de forma paginada.
+📝 Gestión Completa de Tareas (CRUD)
+- ✅ Crear nuevas tareas con título y descripción
+- 👀 Visualizar todas tus tareas organizadas
+- ✏️ Actualizar estado (completada/pendiente) y detalles
+- 🗑️ Eliminar tareas que ya no necesites
 
-✏️ Update (actualizar) el estado de una tarea (completada/pendiente) o sus detalles.
+📄 Sistema de Paginación
+- Navegación fluida entre páginas
+- Optimizado para grandes volúmenes de datos
 
-🗑️ Delete (eliminar) tareas.
+🛠️ TECNOLOGÍAS UTILIZADAS
+=========================
 
-Paginación: Las tareas se muestran en páginas para mejorar la experiencia de usuario y el rendimiento al manejar grandes volúmenes de datos.
+Backend:
+--------
+🟢 Node.js - Entorno de ejecución JavaScript
+⚡ Express.js - Framework web para APIs REST  
+🔄 Sequelize - ORM para gestión de base de datos
+🗃️ MySQL - Base de datos relacional
+🔑 JWT - Autenticación y autorización
 
-### Tecnologías Utilizadas 🛠️
-**Backend**
-Node.js: Entorno de ejecución de JavaScript del lado del servidor.
+Frontend:
+---------
+💚 Vue.js - Framework para interfaces de usuario
+📡 Axios - Cliente HTTP para peticiones API
+🎨 Tailwind CSS - Framework CSS utilitario
 
-Express.js: Framework web para Node.js, utilizado para construir la API REST.
+⚙️ CONFIGURACIÓN DEL PROYECTO
+=============================
 
-Sequelize: ORM (Object-Relational Mapper) para interactuar con la base de datos de manera sencilla.
+📋 Requisitos Previos:
+- Node.js (versión 14 o superior)
+- npm (incluido con Node.js)
+- MySQL
 
-MySQL: Sistema de gestión de bases de datos relacional.
+🖥️ CONFIGURACIÓN DEL BACKEND
+============================
 
-jsonwebtoken (JWT): Para la gestión de la autenticación de usuarios.
+1️⃣ Navegar al directorio:
+   cd backend
 
-**Frontend**
-Vue.js: Framework progresivo para construir interfaces de usuario.
+2️⃣ Instalar dependencias:
+   npm install
 
-Axios: Cliente HTTP para realizar peticiones a la API del backend.
+3️⃣ Crear archivo .env en la carpeta backend:
 
-Tailwind CSS: Framework de CSS utilitario para un diseño rápido y responsivo.
+   DB_NAME=tu_nombre_de_bd
+   DB_USER=tu_usuario
+   DB_PASSWORD=tu_contraseña
+   DB_HOST=localhost
+   DB_PORT=3306
+   TOKEN_SECRET=token_secret
+   TOKEN_EXPIRATION=12h
+   PORT=3000
 
-### Configuración del Proyecto ⚙️
-Sigue estos pasos para tener una copia del proyecto en tu máquina local para desarrollo.
+4️⃣ Iniciar el servidor:
+   node app.js
 
-**1. Requisitos Previos**
-Asegúrate de tener instalado lo siguiente:
+🎉 El servidor estará corriendo en localhost:3000
 
-Node.js (versión 14 o superior)
+💡 NOTA: El frontend ya está integrado en el build del backend
 
-npm (normalmente viene con Node.js)
+🎨 CONFIGURACIÓN DEL FRONTEND (OPCIONAL)
+=======================================
 
-MySQL
+1️⃣ Navegar al directorio:
+   cd frontend
 
-**2. Configuración del Backend**
-Navega a la carpeta backend en tu terminal.
+2️⃣ Instalar dependencias:
+   npm install
 
-cd backend
+3️⃣ Crear archivo .env en la carpeta frontend:
 
-Instala las dependencias del servidor.
+   VITE_API_URL=http://localhost:3500
 
-npm install
+4️⃣ Iniciar servidor de desarrollo:
+   npm run dev
 
-Crea un archivo .env en la carpeta backend y añade tus variables de entorno para la base de datos.
+🎉 La aplicación estará disponible en http://localhost:5173/
 
-DB_NAME=tu_nombre_de_bd
-DB_USER=tu_usuario
-DB_PASSWORD=tu_contraseña
-DB_HOST=localhost
-DB_PORT=3306
-TOKEN_SECRET=token_secret
-TOKEN_EXPIRATION=12h
-PORT=3000
+🌐 DESPLIEGUE EN PRODUCCIÓN
+===========================
 
-Inicia el servidor.
+Frontend: Vercel, Netlify
+Backend: Render, Railway, Heroku
+Base de Datos: PlanetScale, AWS RDS
 
-node app.js
-
-El servidor se ejecutará en el puerto especificado en tu archivo .env.
-
-tambien se ha importado la build del frontend para que todo sea ejecutado en localhost:3000
-igualmente, se puede inicializar el frontend por separado para su prueba y uso 
-
-**3. Configuración del Frontend**
-Navega a la carpeta frontend en tu terminal.
-
-cd ../frontend
-
-Instala las dependencias del cliente.
-
-npm install
-
-Crea un archivo .env en la carpeta frontend y añade la URL de la API.
-
-VITE_API_URL=http://localhost:3500
-
-Inicia la aplicación de Vue.
-
-npm run dev
-
-La aplicación se abrirá en tu navegador en http://localhost:5173/ (o un puerto similar).
-
-### Despliegue 🌐
-Este proyecto está configurado para ser desplegado en plataformas como Vercel para el frontend y Render o Railway para el backend. Recuerda configurar las variables de entorno de la base de datos en la plataforma de despliegue de tu backend para que la aplicación funcione correctamente en producción.
+⚠️ IMPORTANTE: Configura todas las variables de entorno en tu plataforma de despliegue
