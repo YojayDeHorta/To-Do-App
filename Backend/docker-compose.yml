@@ -1,0 +1,30 @@
+version: '3.8'
+services:
+
+  tododb:
+    image: mysql:8.0
+    container_name: to-do-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: $DB_PASSWORD
+      MYSQL_DATABASE: $DB_NAME
+    ports:
+      - "33060:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+  app:
+    build: .
+    container_name: to-do
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - DB_HOST=tododb
+      - DB_USER=root
+      - DB_PASSWORD=$DB_PASSWORD
+      - DB_NAME=$DB_NAME
+    depends_on:
+      - tododb
+
+volumes:
+  mysql_data:
